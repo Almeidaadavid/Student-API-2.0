@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
 using StudentAPI.Context;
+using StudentAPI.Services;
+using StudentAPI.Services.Interfaces;
 
 namespace StudentAPI {
     public class Program {
@@ -11,6 +13,7 @@ namespace StudentAPI {
             builder.Services.AddDbContext<AppDbContext>(option => {
                 option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+            builder.Services.AddScoped<IStudentService, StudentsService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
