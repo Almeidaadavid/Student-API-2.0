@@ -11,7 +11,12 @@ namespace StudentAPI.Services {
         }
 
         public async Task<IEnumerable<Student>> GetStudents() {
-            return await _Context.Students.ToListAsync();
+            try {
+                List<Student> Students = await _Context.Students.ToListAsync();
+                return Students;
+            } catch (Exception ex) {
+                throw new Exception("Error while retrieving students.", ex);
+            }
         }
 
         public async Task<Student> GetStudent(int id) {
@@ -21,14 +26,12 @@ namespace StudentAPI.Services {
                 return student; 
             } catch (Exception ex) {
                 throw new Exception("Aluno não encontrado.");
-            } finally {
-               _Context.Dispose();
             }
         }
 
         public async Task<IEnumerable<Student>> GetStudentsByName(string Name) {
             IEnumerable<Student> Students;
-            if (!string.IsNullOrEmpty(nome)) {
+            if (!string.IsNullOrEmpty(Name)) {
                 Students = await _Context.Students.Where(x => x.Name.Contains(Name)).ToListAsync();
                 return Students;
             }
