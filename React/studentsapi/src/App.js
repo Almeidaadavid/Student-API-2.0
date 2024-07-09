@@ -11,7 +11,7 @@ function App() {
   const [modalIncluir, setModalIncluir] = useState(false);
   const [modalEditar, setModalEditar] = useState(false);
   const [modalExcluir, setModalExcluir] = useState(false);
-  const [updateData, setUpdateData] = useState(false);
+  const [updateData, setUpdateData] = useState(true);
 
   const [AlunoSelecionado, setAlunoSelecionado] = useState({
     id: '',
@@ -25,11 +25,9 @@ function App() {
     setAlunoSelecionado ({
       ...AlunoSelecionado, [name]:value
     });
-    console.log(`AlunoSelecionado: ${AlunoSelecionado}`);
   }
 
   const abrirFecharModalIncluir=() => {
-    console.log(`SetModalIncluir: ${!modalIncluir}`)
     setModalIncluir(!modalIncluir);
   }
 
