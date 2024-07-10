@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\dev\\Estudos-Projetos\\WebApiReact\\StudentAPI\\StudentAPI\\StudentAPI.csproj": {}
+    "E:\\dev\\Estudos-Projetos\\WebApiReact 2.0\\Student-API-2.0\\StudentAPI\\StudentAPI\\StudentAPI.csproj": {}
   },
   "projects": {
-    "E:\\dev\\Estudos-Projetos\\WebApiReact\\StudentAPI\\StudentAPI\\StudentAPI.csproj": {
+    "E:\\dev\\Estudos-Projetos\\WebApiReact 2.0\\Student-API-2.0\\StudentAPI\\StudentAPI\\StudentAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\dev\\Estudos-Projetos\\WebApiReact\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
+        "projectUniqueName": "E:\\dev\\Estudos-Projetos\\WebApiReact 2.0\\Student-API-2.0\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
         "projectName": "StudentAPI",
-        "projectPath": "E:\\dev\\Estudos-Projetos\\WebApiReact\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
+        "projectPath": "E:\\dev\\Estudos-Projetos\\WebApiReact 2.0\\Student-API-2.0\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "E:\\dev\\Estudos-Projetos\\WebApiReact\\StudentAPI\\StudentAPI\\obj\\",
+        "outputPath": "E:\\dev\\Estudos-Projetos\\WebApiReact 2.0\\Student-API-2.0\\StudentAPI\\StudentAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WU2VXrmAZAbOFKZLWRzhhHxpyPXik2tCA7xk5naOqQls4W/SrxW+DsYlbrRYvp84jHoeRjG6xaWDdFeHiIDMvA==",
+  "dgSpecHash": "Rr8C66u4IjB70Evwisqk+B6Vo8QTEQRnrKiioJjMK8aStK2cPG5F4ArUhHFMISpq9b/cYE1t/gTVNLy/24JD+A==",
   "success": true,
-  "projectFilePath": "E:\\dev\\Estudos-Projetos\\WebApiReact\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
+  "projectFilePath": "E:\\dev\\Estudos-Projetos\\WebApiReact 2.0\\Student-API-2.0\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\david\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
