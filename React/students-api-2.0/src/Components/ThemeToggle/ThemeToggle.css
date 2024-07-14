@@ -1,0 +1,9 @@
+.theme-toggle-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s; /* Transição suave de cor */
+}

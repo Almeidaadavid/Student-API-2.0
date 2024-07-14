@@ -1,0 +1,176 @@
+.student-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 25px;
+    margin: 20px auto;
+    color: var(--text-color); /* Garante que o texto seja visível */
+}
+
+.student-container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    color: var(--text-color); /* Garante que o texto seja visível */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    height: 35px;
+    margin-right: 20px;
+}
+
+.header-left span {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.header-left span strong {
+    color: #17202a;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .button,
+.header-right .logout-button,
+.header-right .header-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: var(--text-color);
+    background: var(--background-color); /* Alterado para usar o background padrão */
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.header-right .button:hover,
+.header-right .logout-button:hover,
+.header-right .header-link:hover {
+    filter: brightness(90%);
+}
+
+.student-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.student-container form .filter-input {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    color: var(--input-text-color); /* Cor do texto no input */
+    background-color: var(--background-color); /* Fundo baseado no --background-color */
+}
+
+.student-container form .filter-button {
+    padding: 10px 20px;
+    background: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    line-height: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.student-container form .filter-button:hover {
+    background: #666; /* Ajuste para o modo dark */
+}
+
+.student-container h1 {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.student-container ul {
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    list-style: none;
+}
+
+.student-container ul li {
+    background: var(--background-color); /* Fundo baseado no --background-color */
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.student-container ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.student-container ul li .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-color); /* Garante que o texto seja visível */
+}
+
+.student-container ul li .info span {
+    display: flex;
+    gap: 5px;
+    color: var(--text-color); /* Garante que o texto seja visível */
+}
+
+.student-container ul li .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.student-container ul li button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.student-container ul li button:hover {
+    opacity: 0.8;
+}
+
+body.dark-theme .student-container ul li {
+    background: #444; /* Altere para o tom desejado */
+}
+
+.student-container header .header-right .button.logout-button svg,
+.student-container header .header-right .button.header-link svg {
+    stroke: var(--icon-stroke-color); /* Define a cor do contorno */
+    stroke-width: 2px; /* Define a largura do contorno */
+    fill: none; /* Garante que o preenchimento interno do ícone seja transparente */
+}
+
+.student-container header .header-right .button.edit-button svg,
+.student-container header .header-right .button.user-x-button svg {
+    color: var(--icon-stroke-color); /* Define a cor do contorno */
+}

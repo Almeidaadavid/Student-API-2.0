@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --background-color: #f0f0f5;
+    --text-color: #333333;
+    --input-text-color: #333333; /* Cor do texto nos inputs */
+    --input-border-color: #DCDCE6;
+    --button-background-color: #aaa9bd;
+    --button-text-color: #333333;
+    --icon-color-light: #333333; /* Cor dos ícones no modo light */
+    --icon-color-dark: #f0f0f5; /* Cor dos ícones no modo dark */
+    --icon-stroke-color: var(--text-color); /* Cor do contorno do ícone */
+}
+
+
+body {
+    font: 300 14px Roboto, sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea {
+    font: 400 18px Roboto, sans-serif;
+    color: var(--input-text-color); /* Cor do texto nos inputs */
+    background-color: var(--background-color); /* Fundo baseado no --background-color */
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-top: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+form input {
+    width: 100%;
+    height: 60px;
+    color: var(--input-text-color); /* Cor do texto no input */
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-top: 16px;
+    background-color: var(--background-color); /* Fundo baseado no --background-color */
+}
+
+.button {
+    width: 100%;
+    height: 60px;
+    background: var(--button-background-color);
+    border: 0;
+    border-radius: 8px;
+    color: var(--button-text-color);
+    font-weight: 700;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.3s;
+}
+
+.button:hover {
+    filter: brightness(80%);
+}
+
+body.dark-theme {
+    --background-color: #333333;
+    --text-color: #f0f0f5;
+    --input-border-color: #555555;
+    --button-background-color: #555555;
+    --button-text-color: #f0f0f5;
+    --icon-stroke-color: var(--text-color); /* Cor do contorno do ícone no modo dark */
+    --input-text-color: #f0f0f5; /* Cor do texto nos inputs no modo dark */
+}
