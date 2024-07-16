@@ -69,6 +69,11 @@ form input {
     max-width: 350px;
 }
 
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
 /* .login-container {
     width: 100%;
     max-width: 900px;
